@@ -1,0 +1,10 @@
+USE Assignment1;
+GO
+CREATE OR ALTER PROCEDURE getCategory(
+    @Id VARCHAR(255)
+)
+AS 
+BEGIN
+SELECT * FROM categories WHERE Id = @Id
+END
+GO

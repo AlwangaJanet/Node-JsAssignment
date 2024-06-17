@@ -1,0 +1,7 @@
+Use Assignment1;
+GO
+CREATE OR ALTER PROCEDURE getUser(@Email VARCHAR (255))
+AS
+BEGIN
+SELECT * FROM users WHERE Email=@Email
+END

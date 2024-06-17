@@ -1,0 +1,7 @@
+USE Assignment1;
+
+CREATE TABLE categories (
+    Id VARCHAR(255) PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL
+);
+GO

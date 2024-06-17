@@ -1,0 +1,11 @@
+USE Assignment1;
+
+CREATE TABLE users(
+Id VARCHAR (255) PRIMARY KEY,
+username VARCHAR (255) NOT NULL,
+email VARCHAR (255) NOT NULL UNIQUE,
+password VARCHAR (255) NOT NULL,
+isDeleted INT DEFAULT 0,
+isEmailSent INT DEFAULT 0,
+)
+GO

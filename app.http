@@ -1,0 +1,78 @@
+# add a product
+POST  http://localhost:4000/products
+Content-Type: application/json
+
+{
+    "name":"Speaker",
+    "price":500
+}
+
+######
+# get all the products
+GET http://localhost:4000/products
+
+
+####
+# get a single product 
+GET http://localhost:4000/products/25b1cd0d-70d6-45e7-b6b4-f4bc4dea44d1
+
+##########
+# update a product
+PUT http://localhost:4000/products/25b1cd0d-70d6-45e7-b6b4-f4bc4dea44d1
+Content-Type: application/json
+
+{
+    "name":"Massage Oil",
+    "price":1200
+}
+
+####
+# delete a product
+DELETE http://localhost:4000/products/6d47a9a6-21e6-46f9-bcba-650560e15657
+
+// Categories
+#####
+# add a category
+POST  http://localhost:4000/categories
+Content-Type: application/json
+
+{
+    "Name":"Accesories"
+}
+
+######
+# get all the categories
+GET http://localhost:4000/categories
+
+
+######
+# get a category
+GET http://localhost:4000/categories/820f3c35-3363-4673-927c-a7bfeec30a6a
+
+
+
+####
+// Users
+# add user
+POST http://localhost:4000/users/register
+Content-Type: application/json
+
+{
+    "username":"Janet Alwanga",
+    "email": "janetjanto3@gmail.com",
+    "password":"Offeree@01"
+}
+
+####
+# login user
+POST http://localhost:4000/users/login
+Content-Type: application/json
+
+{
+   "email": "janetjanto3@gmail.com",
+    "password":"Offeree@01"
+}
+
+####
+GET http://localhost:4000/products
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6Ijk2Yjc3ZTBjLTI3ZTAtNDExZi05MjAwLTY1NTE2MDM5MTRhZCIsInVzZXJuYW1lIjoiSmFuZXQgQWx3YW5nYSIsImlhdCI6MTcxODU3NDg5MSwiZXhwIjoxNzE4NTc4NDkxfQ.pdjD1kjMO7mdzg3pf2iqpqIL4RFkypyKw_PBU3p1X18

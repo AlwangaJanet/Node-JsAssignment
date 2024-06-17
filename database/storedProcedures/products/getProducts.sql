@@ -1,0 +1,8 @@
+USE Assignment1;
+GO
+CREATE OR ALTER PROCEDURE getProducts
+AS 
+BEGIN
+SELECT * FROM products
+END
+GO
